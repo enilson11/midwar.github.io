@@ -1,0 +1,180 @@
+/* Reset basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Estilos para el logo */
+.logo-img {
+    width: 150px;  /* Establece el ancho del logo */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    border-radius: 10px;  /* Bordes redondeados (opcional) */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil para darle un efecto de profundidad */
+    transition: transform 0.3s ease-in-out;  /* Efecto de transición suave al pasar el cursor */
+}
+
+.logo-img:hover {
+    transform: scale(1.1);  /* Aumenta ligeramente el tamaño del logo al pasar el cursor */
+}
+
+/* Alineación del logo en el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+header .logo-img {
+    margin-right: 15px;  /* Espacio a la derecha del logo */
+}
+
+/* Estilos para el título */
+.logo {
+    font-size: 55px;  /* Tamaño grande para el texto */
+    font-family: Georgia,  serif;  /* Tipo de letra general (puedes cambiarlo a cualquier fuente que desees) */
+    font-weight: bold;  /* Texto en negrita para mayor énfasis */
+    color: #194653;  /* Color del texto, puedes usar el color que desees */
+    text-align: center;  /* Centra el texto horizontalmente */
+    text-transform: uppercase;  /* Convierte todo el texto a mayúsculas */
+    letter-spacing: 2px;  /* Espaciado entre las letras */
+    margin-top: 20px;  /* Espacio por encima del título */
+}
+
+.logo span {
+    font-size: 55px;  /* Tamaño un poco mayor para la parte "Nuestra Señora de Alta Gracia" */
+    font-family: 'Georgia', serif;  /* Tipografía diferente para el texto dentro del <span> */
+    color: #FFD700;  /* Color dorado para el texto dentro del span */
+}
+
+
+
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+.main-header {
+    background-color: #2d3e50;  /* Color de fondo por defecto (puedes eliminarlo si solo usas la imagen) */
+    background-image: url('images/in.jpg');  /* Ruta de la imagen que quieres usar como fondo */
+    background-size: cover;  /* Asegura que la imagen cubra toda el área del fondo */
+    background-position: center center;  /* Centra la imagen en el área */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.main-header .logo {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-header .logo span {
+    color: #4CAF50;
+}
+
+.main-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-header nav ul li {
+    margin-left: 20px;
+}
+
+.main-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.main-header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light {
+    background-color: #f9f9f9;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2em;
+    color: #2d3e50;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-header .logo {
+        font-size: 1.8em;
+    }
+
+    .main-header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-header nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+}
